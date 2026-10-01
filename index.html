@@ -28,13 +28,20 @@
                      images/puppy-3.0.jpg 3x">
         </section>
 
-        <section class="test2">
-          <!-- this section is for playing with sizes-->
-
-        </section>
-
-        <section>
+        <section class="picture-test">
           <!-- this section is for playing with the picture element -->
+           <picture>
+            <!-- picture lets you use different images at different sizes -->
+            <source srcset="images/puppy-1200.jpg"
+                    media="(min-width: 700px)">
+            <!-- <source srcset="images/puppy-600.jpg"
+                    media="(max-width: 699px)"> -->
+
+                    <!-- you always need a fallback - the img tag - just in case the picture tag doesn't work
+                     and supply the alt text -->
+            <img src="images/puppy-600.jpg"
+             alt="A white puppy standing in short grass">
+           </picture>
         </section>
     </main>
     <footer>

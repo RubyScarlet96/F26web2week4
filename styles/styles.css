@@ -69,7 +69,15 @@ images that are not important for understanding the content of the page */
 
 .back-sizer{
 	height: 500px;
-	background-image: url('../images/puppy-full.jpg');
+	/* the .../ tells the browser to go out of the css folder first and into the images folder */
+	/* background-image: url('../images/puppy-full.jpg'); */
+	background-image: image-set(
+		"../images/puppy-1.0.jpg" 1x,
+		"../images/puppy-2.0.jpg" 2x,
+		"../images/puppy-3.0.jpg" 3x
+	);
+
+
 	/* background-size: auto 500px; */
 	/* two values means width and height - only fix one of the values,
 	so the other dimension scales automatically resizes in ratio */
