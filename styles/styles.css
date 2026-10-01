@@ -1,0 +1,88 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* **********************************************
+                  MAIN STYLES
+********************************************** */
+
+/* targets a class */
+.container {
+	/* makes sure the element doesn't get wider than 900px */
+  max-width: 900px;
+  margin: 0 auto;
+  /* centers the element in its parent */
+  background-color: aqua
+}
+
+/* ********************************************
+                Background Image
+*********************************************** */
+
+/* CSS background images should only be used for decorative image-
+images that are not important for understanding the content of the page */
+
+.back-sizer{
+	height: 500px;
+	background-image: url('../images/puppy-full.jpg');
+	/* background-size: auto 500px; */
+	/* two values means width and height - only fix one of the values,
+	so the other dimension scales automatically resizes in ratio */
+
+	/* contain forces the image to resize so it is entirely inside the element
+	cover forces the image to rsize so the entire element is covered, even if
+	part of the image is cut off */
+	background-size: cover;
+
+	/* background position lets you move the image so the part you want is showing
+	(so long as there is part of the image that is cut off) */
+	background-position: center center;
+
+	/*  if you are worried about the image repeating you can turn it off*/
+	background-repeat: no-repeat;
+}
